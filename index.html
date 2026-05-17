@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero" aria-labelledby="app-title">
+      <p class="eyebrow">Chat • Images • Video prompts</p>
+      <h1 id="app-title">Ultimate AI Assistant</h1>
+      <p class="subtitle">Ask a question, generate an image, or prepare a video prompt from one simple interface.</p>
+    </section>
+
+    <section class="panel" aria-label="AI controls">
+      <div id="chat" class="chat" aria-live="polite"></div>
+
+      <label class="sr-only" for="prompt">Prompt</label>
+      <textarea id="prompt" rows="3" placeholder="Ask anything..."></textarea>
+
+      <div class="buttons">
+        <button type="button" id="chat-button">Chat</button>
+        <button type="button" id="image-button">Image</button>
+        <button type="button" id="video-button">Video</button>
+      </div>
+    </section>
+
+    <section id="result" class="result" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
