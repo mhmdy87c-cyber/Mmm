@@ -1,0 +1,13 @@
+{
+  "name": "ultimate-ai",
+  "version": "1.0.0",
+  "description": "A Netlify-hosted AI assistant with chat, image generation, and a video prompt endpoint.",
+  "private": true,
+  "scripts": {
+    "dev": "npx netlify-cli dev",
+    "check": "node --check script.js && node --check netlify/functions/chat.js && node --check netlify/functions/image.js && node --check netlify/functions/video.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
